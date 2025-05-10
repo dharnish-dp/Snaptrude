@@ -1,4 +1,4 @@
-# Snaptrude Automation Testing Project
+# Snaptrude Automation Testing assignment
 
 This project automates the testing of Snaptrude's web application using the Playwright framework. It includes test cases for various features and supports multiple browsers.
 
@@ -62,6 +62,13 @@ pip install -r requirements.txt
 playwright install
 ```
 
+4. .env file expect below parameters
+```bash
+USERNAME=<username>
+PASSWORD=<password>
+```
+
+
 ### Directory Structure
 
 * **conftest.py** - Central configuration and fixtures for the test framework.
@@ -95,27 +102,8 @@ pytest test/ -s -v --test-browser=firefox
 To view a trace file, use the Playwright CLI:
 
 ```bash
-npx playwright show-trace traces/test_FR01.zip
+playwright show-trace traces/test_FR01.zip
 ```
 
-## 📝 Customization
 
-You can customize the browser settings, trace options, and logging configurations in the **conftest.py** file and the **utils/** module as needed.
 
-## 💡 Future Improvements
-
-* Add more test cases for comprehensive coverage.
-* Integrate with CI/CD pipelines.
-* Implement automated report generation.
-
-## 🤝 Contributions
-
-Feel free to open issues, submit PRs, or suggest improvements.
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 📧 Support
-
-For support, please contact the project maintainer.
